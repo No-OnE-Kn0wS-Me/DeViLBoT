@@ -16,3 +16,4 @@ async def amireallyalive(alive):
     await alive.edit("`Finally Yaah! ^_^\n I'm Running Faster than Usain Bolt\n\n`"
                      f"`My Nub owner❤`: {DEFAULTUSER}\n"
                      "`fork by:` @tHe_GaMeR_B0Y\n") 
+                      
