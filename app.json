@@ -1,7 +1,7 @@
 {
-  "name": "GujjuBot",
-  "description": "Userbot created by a SNAPDRAGON and custom fork by @Halto_Tha\n\n join https://t.me/Gujju_Bot_Support for any problems or support",
-  "logo": "https://telegra.ph/file/5131193c816e303426e32.png",
+  "name": "DeViLBoT",
+  "description": "Userbot created by a SNAPDRAGON and custom fork by @tHe_GaMeR_B0Y",
+  "logo": "https://telegra.ph/file/ab85258ac3829bf0be2f2.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,7 +9,7 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/japarmar/GujjuBot",
+  "repository": "https://github.com/salmanpdr/DeViLBoT",
   "website": "#TODO",
   "success_url": "#TODO",
   "env": {
@@ -51,7 +51,7 @@
     },
     "SUDO_USERS": {
       "description": "Makes your acc and bot stable",
-      "value": "948408212",
+      "value": "861055237",
       "required": false
     },
     "HEROKU_API_KEY": {
@@ -86,12 +86,12 @@
     },
     "DOWNLOAD_PFP_URL_CLOCK": {
       "description": "Needed for autopic module. A url that is a preview link of your Profile Pic",
-      "value": "",
+      "value": "https://telegra.ph/file/ab85258ac3829bf0be2f2.jpg",
       "required": false
     },
     "TZ": {
       "description": "Required for Correct Time on autopic",
-      "value": "",
+      "value": "Asia/Kolkata",
       "required": false
     }
   },
