@@ -9,11 +9,11 @@ from telethon import events
 
 import asyncio
 
-from uniborg.util import admin_cmd
 
 
 
-@borg.on(admin_cmd(pattern=r"mtn"))
+
+@borg.on(events.NewMessage(pattern=r"\.(.*)", outgoing=True))
 
 async def _(event):
 
@@ -25,15 +25,15 @@ async def _(event):
 
     animation_ttl = range(0, 19)
 
-   # input_str = event.pattern_match.group(1)
+    input_str = event.pattern_match.group(1)
 
-   # if input_str == "mtn":
+    if input_str == "mtn":
 
-    await event.edit("mtn")
+        await event.edit(input_str)
 
-    animation_chars = [
+        animation_chars = [
         
-            "`Connecting To MTN NG ....`",
+            "`Connecting To MTN NG NIGGA ....`",
             "`█ ▇ ▆ ▅ ▄ ▂ ▁`",
             "`▒ ▇ ▆ ▅ ▄ ▂ ▁`",
             "`▒ ▒ ▆ ▅ ▄ ▂ ▁`",
@@ -51,12 +51,12 @@ async def _(event):
             "`▁ ▂ ▄ ▅ ▆ ▒ ▒`",
             "`▁ ▂ ▄ ▅ ▆ ▇ ▒`",
             "`▁ ▂ ▄ ▅ ▆ ▇ █`",
-            "**MTN Network Boosted....**"
+            "**MTN Network Boosted....ENJOY MF**"
 
  ]
 
-    for i in animation_ttl:
+        for i in animation_ttl:
 
-        await asyncio.sleep(animation_interval)
+            await asyncio.sleep(animation_interval)
 
-        await event.edit(animation_chars[i % 19])
+            await event.edit(animation_chars[i % 19])
