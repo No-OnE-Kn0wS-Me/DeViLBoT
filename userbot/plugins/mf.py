@@ -3,15 +3,15 @@ from telethon import events, functions, __version__
 from userbot.utils import admin_cmd
 
 
-@borg.on(admin_cmd(pattern="mf"))  # pylint:disable=E0602
+@borg.on(admin_cmd(pattern="mf ?(.*)", allow_sudo=True))  # pylint:disable=E0602
 async def _(event):
     if event.fwd_from:
         return
-   # splugin_name = event.pattern_match.group(1)
-  #  if splugin_name in borg._plugins:
-    #    s_help_string = borg._plugins[splugin_name].__doc__
-  #  else:
-    #    s_help_string = ""
+    splugin_name = event.pattern_match.group(1)
+    if splugin_name in borg._plugins:
+        s_help_string = borg._plugins[splugin_name].__doc__
+    else:
+        s_help_string = ""
     help_string = """
 ......................................../´¯/) 
 ......................................,/¯../ 
@@ -46,7 +46,7 @@ async def _(event):
     if tgbotusername is not None:
         results = await borg.inline_query(  # pylint:disable=E0602
             tgbotusername,
-            help_string + "\n\n"
+            help_string + "\n\n" + s_help_string
         )
         await results[0].click(
             event.chat_id,
@@ -55,7 +55,7 @@ async def _(event):
         )
         await event.delete()
     else:
-        await event.reply(help_string + "\n\n")
+        await event.reply(help_string + "\n\n" + s_help_string)
         await event.delete()
 
 
