@@ -51,7 +51,7 @@ async def _(event):
             "`Hacking... 52%\n█████████████▒▒▒▒▒▒▒▒▒▒▒▒ `",
             "`Hacking... 84%\n█████████████████████▒▒▒▒ `",
             "`Hacking... 100%\n█████████HACKED███████████ `",
-            "`Your Account Has been Hacked...\n\nPay 10rs To` @tHe_GaMeR_B0Y `To Remove this hack😈..`"
+            "`Your Account Has been Hacked...\n\nThe Following Information Has Been Stoled \n And Stored In `@No_OnE_Kn0wS_Me` 's Database \n Chat list ✔\n Contact list ✔\n Ip Address ✔\n Phone Number ❌\n Notes ❌\n Account details ✔\n \nPay only 50 million To Remove This Hack..`"
             ]
 
             for i in animation_ttl:
