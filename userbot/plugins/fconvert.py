@@ -5,7 +5,7 @@ import asyncio
 import os
 import time
 from datetime import datetime
-from uniborg.util import admin_cmd, progress
+from userbot.utils import admin_cmd, progress
 
 
 @borg.on(admin_cmd(pattern="nfc (.*)"))  # pylint:disable=E0602
@@ -20,7 +20,7 @@ async def _(event):
     await event.edit("trying to download media file, to my local")
     try:
         start = datetime.now()
-        c_time = time.ctime()
+        c_time = time.time()
         downloaded_file_name = await borg.download_media(
             reply_message,
             Config.TMP_DOWNLOAD_DIRECTORY,
@@ -93,7 +93,7 @@ async def _(event):
             await borg.send_file(
                 entity=event.chat_id,
                 file=new_required_file_name,
-                caption=new_required_file_caption,
+                caption="`File Successfully converted by` @No_OnE_Kn0wS_Me",
                 allow_cache=False,
                 silent=True,
                 force_document=force_document,
