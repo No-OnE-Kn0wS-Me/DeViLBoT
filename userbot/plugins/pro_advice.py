@@ -382,4 +382,3 @@ async def _(event):
     if x==87:
 
         await event.edit("`\"Go for that run, no one is looking at you, don't overthink it, do it!\"`")
-Click Here To Download
