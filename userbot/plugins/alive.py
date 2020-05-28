@@ -13,7 +13,5 @@ DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars 
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-    await alive.edit("`Finally Yaah! I'm Alive^_^\n`"
-                     f"`My Nub owner❤`: {DEFAULTUSER}\n"
-                     "`forked by:` @No_OnE_Kn0wS_Me\n") 
+    await alive.edit("`Bot ded ^_^`") 
                       
