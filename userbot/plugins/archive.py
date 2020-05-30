@@ -23,7 +23,6 @@ from userbot.uniborgConfig import Config
 from telethon import events
 from userbot.utils import admin_cmd, humanbytes, progress, time_formatter
 import subprocess
-import patoolib
 import tarfile
 from userbot import CMD_HELP
 
