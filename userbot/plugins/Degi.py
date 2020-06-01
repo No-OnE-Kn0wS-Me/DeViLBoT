@@ -3,7 +3,7 @@
 type `.degi` and `.nehi` to see the fun.
 """
 import random, re
-from userbot.util import admin_cmd
+from uniborg.util import admin_cmd
 import asyncio
 from telethon import events
 
