@@ -2,7 +2,7 @@ from telethon import events
 import os
 import requests
 import json
-from userbot.util import admin_cmd
+from uniborg.util import admin_cmd
 
 @borg.on(events.NewMessage(pattern="https://?(.*)",))
 async def _(event):
