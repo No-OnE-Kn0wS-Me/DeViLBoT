@@ -9,9 +9,11 @@ from userbot.utils import admin_cmd
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
 
+img = "https://telegra.ph/file/848c5dc7531332a1c6507.jpg"
+
 #@command(outgoing=True, pattern="^.alive$")
 @borg.on(admin_cmd(pattern=r"alive"))
 async def amireallyalive(alive):
     """ For .alive command, check if the bot is running.  """
-    await alive.edit("`Bot ded ^_^`") 
+    await alive.edit.reply_photo(img,"`Bot ded ^_^`") 
                       
