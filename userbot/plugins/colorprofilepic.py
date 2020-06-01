@@ -57,11 +57,11 @@ async def autopic(event):
     
         shutil.copy(downloaded_file_name, photo)
         im = Image.open(photo)
-        current_time = datetime.now().strftime("\n \n \n \n \n \n \n Owner: @r4v4n4 \n \n \n \n \n \n \n \n \n                   Time: %H:%M:%S \n                   Date: %d/%m/%y ")
+        current_time = datetime.now().strftime("\n \n \n \n \n \n \n Owner: @No_OnE_Kn0wS_Me \n \n \n \n \n \n \n \n \n                   Time: %H:%M:%S \n                   Date: %d/%m/%y ")
         img = Image.open(photo)
         drawn_text = ImageDraw.Draw(img)
-        fnt = ImageFont.truetype(FONT_FILE_TO_USE, 23)
-        drawn_text.text((200, 250), current_time, font=fnt, fill=(230,230,250))
+        fnt = ImageFont.truetype(FONT_FILE_TO_USE, 30)
+        drawn_text.text((300, 450), current_time, font=fnt, fill=(255,255,255))
         img.save(photo)
         file = await event.client.upload_file(photo)  # pylint:disable=E0602
         try:
