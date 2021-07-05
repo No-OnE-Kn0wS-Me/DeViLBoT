@@ -10,6 +10,8 @@ import asyncio
 from bs4 import BeautifulSoup as bs 
 import requests
 import os
+from userbot.utils import admin_cmd
+
 chunk_size =  3242880
 
 
@@ -31,7 +33,7 @@ async def download_file(url,filename):
 			handle.write(chunk)
 	handle.close()   
 
-@borg.on(events.NewMessage(pattern=r"\.anime", outgoing=True))
+@borg.on(admin_cmd(pattern=r"daime"))
 async def anime_download(event):
 	urls = []
 	url_links = []
