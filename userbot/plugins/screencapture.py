@@ -34,7 +34,7 @@ async def _(event):
                 await borg.send_file(
                     event.chat_id,
                     screenshot_image,
-                    caption=input_str,
+                    caption="File Successfully Captured By @No_OnE_Kn0wS_Me 😈",
                     force_document=True,
                     reply_to=event.message.reply_to_msg_id
                 )
