@@ -72,7 +72,7 @@ async def _(event):
             )
         end = datetime.now()
         ms = (end - start).seconds
-        await event.edit("Removed dat annoying Backgroup in {} seconds, powered by @tHe_GaMeR_B0Y".format(ms))
+        await event.edit("Removed dat annoying Backgroup in {} seconds, powered by @No_OnE_Kn0wS_Me".format(ms))
     else:
         await event.edit("ReMove.BG API returned Errors. Please report to @UniBorg\n`{}".format(output_file_name.content.decode("UTF-8")))
 

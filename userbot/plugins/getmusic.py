@@ -33,18 +33,19 @@ async def _(event):
     reply_to_id = event.message.id
     if event.reply_to_msg_id:
         reply_to_id = event.reply_to_msg_id
-    await event.edit("ok finding the song")    
+    await event.edit("`i am going to find your song..🎶`"),
     bruh(str(cmd))
     l = glob.glob("*.mp3")
     loa = l[0]
-    await event.edit("sending song")
+    await event.edit("`yeeeaah..! i found something..🎉`")
     await borg.send_file(
                 event.chat_id,
                 loa,
                 force_document=True,
                 allow_cache=False,
-                caption=cmd,
+                caption="`📁File successfully Uploaded by` : [No One](https://t.me/No_OnE_Kn0wS_Me) 😈",
                 reply_to=reply_to_id
             )
+    await event.delete()
     os.system("rm -rf *.mp3")
     subprocess.check_output("rm -rf *.mp3",shell=True)

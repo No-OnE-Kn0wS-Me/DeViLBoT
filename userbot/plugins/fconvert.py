@@ -93,7 +93,7 @@ async def _(event):
             await borg.send_file(
                 entity=event.chat_id,
                 file=new_required_file_name,
-                caption=new_required_file_caption,
+                caption="`File Successfully converted by` @No_OnE_Kn0wS_Me",
                 allow_cache=False,
                 silent=True,
                 force_document=force_document,
