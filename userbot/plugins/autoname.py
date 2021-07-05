@@ -10,7 +10,7 @@ from userbot import AUTONAME
 
 
 DEL_TIME_OUT = 60
-DEFAULTUSER = str(AUTONAME) if AUTONAME else "No_OnE_Kn0wS_Me"
+DEFAULTUSER = str(AUTONAME) if AUTONAME else "സ̧̻̤̬͑̑͗͝͠ൽമാ̜̫͢ൻ̨̝̞̼ͤͨ͐ͦ͡"
 
 
 @borg.on(admin_cmd(pattern="autoname"))  # pylint:disable=E0602
@@ -20,7 +20,7 @@ async def _(event):
     while True:
         DM = time.strftime("%d-%m-%y")
         HM = time.strftime("%H:%M")
-        name = f"{HM} {DEFAULTUSER} {DM}"
+        name = f"⌚️{HM} {DEFAULTUSER} {DM}📆"
         logger.info(name)
         try:
             await borg(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
