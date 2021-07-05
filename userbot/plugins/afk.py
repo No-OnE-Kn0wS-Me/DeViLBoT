@@ -24,7 +24,7 @@ async def set_not_afk(event):
         try:
             await borg.send_message(  # pylint:disable=E0602
                 Config.PRIVATE_GROUP_BOT_API_ID,  # pylint:disable=E0602
-                "Mera Malik A Gaya Hurray🥳🥳🥳"
+                "Hey Finally I'm Arrived 🙌"
             )
         except Exception as e:  # pylint:disable=C0103,W0703
             await borg.send_message(  # pylint:disable=E0602
@@ -61,9 +61,9 @@ async def _(event):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_AFK = f"yes: {reason}"  # pylint:disable=E0602
         if reason:
-            await event.edit(f"Mera Malik Ja Raha Hai, and Reason is {reason}")
+            await event.edit(f"I'm leaving, and Reason is {reason}")
         else:
-            await event.edit(f"Mera Malik Ja Raha Hai")
+            await event.edit(f"iam going AFK")
         await asyncio.sleep(5)
         await event.delete()
         try:
@@ -121,8 +121,8 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"My Master Has Been Gone For {afk_since}\nWhere He Is: Tereko kyu batau " + \
-            f"\n\n__ I'll back in a few hours__\n**REASON**: {reason}" \
+        message_to_reply = f"My Master Has Been Gone For {afk_since}\nWhere He Is: Only God knows" + \
+            f"\n\n__ I'll back in a few light years__\n**REASON**: {reason}" \
             if reason \
             else f"**Important Notice**\n\n[This User Is Ded Forever...](https://telegra.ph//file/a53fa950ff31781d5930a.jpg) "
         msg = await event.reply(message_to_reply)
