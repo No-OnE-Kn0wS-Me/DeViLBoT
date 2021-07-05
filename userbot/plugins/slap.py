@@ -12,21 +12,21 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import MessageEntityMentionName
 from userbot import ALIVE_NAME
 
-SLAP_TEMPLATES = (
-    "{user1} {user2} നെ ചുറ്റിക കൊണ്ട് തലക്കടിച്ചു.",
-    "{user1} തടിക്കഷണം കൊണ്ട് {user2} വിന്റെ മുഖത്തു അടിച്ചു. ",
-    "{user1} {user2} നെ കാലിൽ പിടിച്ചു കറക്കി എറിഞ്ഞു ",
-    "{user1} വലിയ ഒരു കല്ല് എടുത്ത് {user2} വിന്റെ തലയിലേക്ക് ഇട്ടു",
-    "{user1} ഒരു വലിയ പാത്രം എടുത്ത് {user2} വിന്റെ മുഖത്ത് ആഞ്ഞടിച്ചു.",
-    "{user1} {user2} വിന്റെ തലക്ക് ഇരുമ്പ് പൈപ്പ് വെച്ചടിച്ചു.",
-    "{user1} ഭിത്തിയിൽ തൂക്കിയിട്ടിരുന്ന ക്ലോക്ക് എടുത്ത് {user2} വിന്റെ പ്രധാന ഭാഗത്ത് അടിച്ചു .",
-    "{user1} {user2} വിനെ കുനിച്ചു നിർത്തി വലിയൊരു തടിക്കഷണം മുതുകത്തിട്ടു",
-    "{user1} ഒരു ഇരുമ്പിന്റെ കസേര എടുത്ത് {user2} ന്റെ തലക്ക് അടിച്ചു..",
-    "{user1} {user2} നെ മരത്തിൽ കെട്ടിയിട്ട് കാലിൽ തീ കൊടുത്തു..."
-    
-)
+SLAP_TEMPLATES = [
+    "{user1} {hits} {user2} with a {item}.",
+    "{user1} {hits} {user2} in the face with a {item}.",
+    "{user1} {hits} {user2} around a bit with a {item}.",
+    "{user1} {throws} a {item} at {user2}.",
+    "{user1} grabs a {item} and {throws} it at {user2}'s face.",
+    "{user1} launches a {item} in {user2}'s general direction.",
+    "{user1} starts slapping {user2} silly with a {item}.",
+    "{user1} pins {user2} down and repeatedly {hits} them with a {item}.",
+    "{user1} grabs up a {item} and {hits} {user2} with it.",
+    "{user1} ties {user2} to a chair and {throws} a {item} at them.",
+    "{user1} gave a friendly push to help {user2} learn to swim in lava."
+]
 
-ITEMS = (
+ITEMS = [
     "cast iron skillet",
     "large trout",
     "baseball bat",
@@ -56,22 +56,22 @@ ITEMS = (
     "piece of rotten meat",
     "bear",
     "ton of bricks",
-)
+]
 
-THROW = (
-    "എറിഞ്ഞു",
-    "വിക്ഷേപിച്ചു",
-    "തട്ടി",
-    "വീശിയെറിഞ്ഞു",
-)
+THROW = [
+    "throws",
+    "flings",
+    "chucks",
+    "hurls",
+]
 
-HIT = (
-    "അടിച്ചു",
-    "ശക്തിയായി പ്രഹരിച്ചു",
-    "തല്ലി",
-    "ഇടിച്ചു",
-    "തൊഴിച്ചു",
-)
+HIT = [
+    "hits",
+    "whacks",
+    "slaps",
+    "smacks",
+    "bashes",
+]
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "GujjuBot"
 
